@@ -74,7 +74,7 @@ public class KubernetesSlave extends AbstractCloudSlave {
                 nodeDescription,
                 template.getRemoteFs(),
                 1,
-                Node.Mode.NORMAL,
+                Node.Mode.EXCLUSIVE,
                 labelStr == null ? null : labelStr,
                 new JNLPLauncher(),
                 rs,
